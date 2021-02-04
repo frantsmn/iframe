@@ -68,19 +68,19 @@ export default {
 		};
 	},
 	watch: {
-		company: function (newData) {
-			if (newData.length) {
-				this.src = `http://verstka-front.biggid.com/widget/dist/?company=${newData}`;
-			} else {
-				this.src = `http://verstka-front.biggid.com/widget/dist`;
-			}
-			this.$nextTick(() => {
-				this.setRawIframe();
-				this.setRawJs();
-			});
-		},
-		elementId: function () {
-			this.setRawJs();
+		$data: {
+			handler: function (newData) {
+				if (newData.company.length) {
+					this.src = `http://verstka-front.biggid.com/widget/dist/?company=${newData.company}`;
+				} else {
+					this.src = `http://verstka-front.biggid.com/widget/dist`;
+				}
+				this.$nextTick(() => {
+					this.setRawIframe();
+					this.setRawJs();
+				});
+			},
+			deep: true,
 		},
 	},
 	mounted() {
