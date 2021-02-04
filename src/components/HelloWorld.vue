@@ -1,58 +1,155 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
-  </div>
+	<div class="container">
+		<div>
+			<div class="inputs">
+				<label>
+					Компания
+					<input v-model="company" type="text" placeholder="company" />
+				</label>
+				<label>
+					Ширина
+					<input
+						v-model="width"
+						type="number"
+						min="320"
+						max="800"
+						placeholder="width"
+					/>
+				</label>
+				<label>
+					Высота
+					<input
+						v-model="height"
+						type="number"
+						min="400"
+						max="800"
+						placeholder="height"
+					/>
+				</label>
+				<label>
+					id контейнера для встраиваемого iframe
+					<input v-model="elementId" type="text" placeholder="height" />
+				</label>
+				<label>
+					Встраивание простым iframe
+					<textarea v-model="rawIframe" cols="30" rows="5" readonly></textarea>
+				</label>
+
+				<label>
+					Встраивание при помощи JS
+					<textarea v-model="rawJs" cols="30" rows="20" readonly></textarea>
+				</label>
+			</div>
+		</div>
+
+		<div ref="iframe_container">
+			<iframe
+				:src="src"
+				frameborder="0"
+				:width="width"
+				:height="height"
+			></iframe>
+		</div>
+	</div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
-}
+	name: "HelloWorld",
+	data() {
+		return {
+			company: "aezakmi",
+			width: 400,
+			height: 500,
+			src: "http://verstka-front.biggid.com/widget/dist",
+			elementId: "app",
+			rawIframe: "",
+			rawJs: "",
+		};
+	},
+	watch: {
+		company: function (newData) {
+			if (newData.length) {
+				this.src = `http://verstka-front.biggid.com/widget/dist/?company=${newData}`;
+			} else {
+				this.src = `http://verstka-front.biggid.com/widget/dist`;
+			}
+			this.$nextTick(() => {
+				this.setRawIframe();
+				this.setRawJs();
+			});
+		},
+		elementId: function () {
+			this.setRawJs();
+		},
+	},
+	mounted() {
+		this.setRawIframe();
+		this.setRawJs();
+	},
+	methods: {
+		setRawIframe() {
+			this.rawIframe = this.$refs.iframe_container.innerHTML;
+		},
+		setRawJs() {
+			this.rawJs = `
+        (function () {
+          var container = document.getElementById("${this.elementId}");
+          var iframe = document.createElement("iframe");
+          if (typeof container != "undefined" && container != null) {
+            iframe.setAttribute(
+              "src",
+              "${this.src}"
+            );
+            iframe.setAttribute("frameborder", 0);
+            iframe.width = "${this.width}";
+            iframe.height = "${this.height}";
+            iframe.frameborder = "0";
+            container.append(iframe);
+          }
+        })();`;
+		},
+	},
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
+.container {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.container > * {
+	padding: 10px;
+}
+
+.inputs {
+	width: 400px;
+	display: flex;
+	flex-flow: column;
+	text-align: left;
+}
+
+label {
+	display: flex;
+	flex-flow: column;
+	padding: 10px;
+}
+
 h3 {
-  margin: 40px 0 0;
+	margin: 40px 0 0;
 }
 ul {
-  list-style-type: none;
-  padding: 0;
+	list-style-type: none;
+	padding: 0;
 }
 li {
-  display: inline-block;
-  margin: 0 10px;
+	display: inline-block;
+	margin: 0 10px;
 }
 a {
-  color: #42b983;
+	color: #42b983;
 }
 </style>
