@@ -1,0 +1,26 @@
+.input-with-button {
+  display: inline-flex;
+  align-items: center;
+  height: 40px;
+  border: solid 1px var(--purple);
+  border-radius: 3px;
+
+  .button {
+    align-self: stretch;
+    border: none;
+    border-left: solid 1px var(--purple);
+    border-radius: 0;
+  }
+  .label {
+    margin: 0 5px;
+  }
+  .input {
+    max-width: 50px;
+    height: 38px;
+
+    &[type="number"]::-webkit-inner-spin-button,
+    &[type="number"]::-webkit-outer-spin-button {
+      height: 40px;
+    }
+  }
+}

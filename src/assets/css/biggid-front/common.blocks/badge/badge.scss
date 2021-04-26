@@ -1,0 +1,81 @@
+@keyframes gloss {
+  0% {
+    left: -10%;
+    opacity: 0;
+  }
+  4% {
+    opacity: 0.6;
+  }
+  8% {
+    left: 110%;
+    opacity: 0;
+  }
+  100% {
+    left: 110%;
+  }
+}
+
+.badge {
+  position: relative;
+  padding: 0.25em 0.5em;
+  white-space: nowrap;
+  color: #000;
+  background: var(--grey-light);
+  font-size: var(--fs-xs);
+  font-weight: 500;
+  margin: 2px 0;
+  display: inline-block;
+  overflow: hidden;
+  // line-height: 2.7em;
+
+  &--gold {
+    // color: #fff;
+    background: var(--gold);
+  }
+
+  &--green {
+    color: #fff;
+    background: var(--green);
+  }
+
+  &--red {
+    color: #fff;
+    background: var(--red);
+  }
+
+  &--orange {
+    color: #fff;
+    background: var(--orange);
+  }
+
+  &--purple {
+    color: #fff;
+    background: var(--purple);
+  }
+
+  //Animation
+  &--gloss {
+    &:after {
+      position: absolute;
+      top: 0;
+      left: -20%;
+      display: block;
+      width: 20px;
+      height: 100%;
+      content: "";
+      transform: skew(-10deg, -10deg);
+      animation: gloss 10s ease 3.5s infinite forwards;
+      opacity: 0;
+      background: linear-gradient(
+        to left,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(224, 215, 133, 0.3) 20%,
+        rgba(255, 255, 255, 0.4) 25%,
+        rgba(255, 255, 255, 0.3) 75%,
+        rgba(253, 253, 252, 0.4) 80%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      background-color: rgba(255, 255, 255, 0.25);
+    }
+  }
+}

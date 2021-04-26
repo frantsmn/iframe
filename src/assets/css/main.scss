@@ -1,0 +1,21 @@
+@import "biggid-front/base.scss";
+@import "biggid-front/normalize.scss";
+@import "biggid-front/fonts.scss";
+@import "biggid-front/variables.scss";
+
+@import "biggid-front/common.blocks/_breakpoints";
+@import "biggid-front/common.blocks/_sprites";
+// @import "biggid-front/common.blocks/_helpers";
+// @import "biggid-front/common.blocks/_animations";
+
+@import "biggid-front/common.blocks/badge/badge.scss";
+@import "biggid-front/common.blocks/button/button.scss";
+@import "biggid-front/common.blocks/card/card.scss";
+@import "biggid-front/common.blocks/event-snippet/event-snippet.scss";
+@import "biggid-front/common.blocks/input/input.scss";
+@import "biggid-front/common.blocks/label/label.scss";
+@import "biggid-front/common.blocks/rating/rating.scss";
+@import "biggid-front/common.blocks/select/select.scss";
+@import "biggid-front/common.blocks/radio-input/radio-input.scss";
+
+@import "form.scss";

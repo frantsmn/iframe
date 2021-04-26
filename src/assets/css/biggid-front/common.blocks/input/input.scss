@@ -1,0 +1,33 @@
+.input {
+  height: var(--input-height);
+  padding-left: 10px;
+
+  &:not([disabled]) {
+    background: #fff;
+  }
+
+  color: var(--dark-text);
+  border: 1px var(--grey-light) solid;
+  border-radius: 3px;
+
+  --input-height: 35px;
+  &[type="number"]::-webkit-inner-spin-button,
+  &[type="number"]::-webkit-outer-spin-button {
+    height: var(--input-height);
+  }
+
+  &--small {
+    padding-left: 5px;
+    font-size: var(--fs-sm);
+
+    --input-height: 30px;
+  }
+
+  &--big {
+    --input-height: 40px;
+  }
+
+  &--borderless {
+    border: none;
+  }
+}

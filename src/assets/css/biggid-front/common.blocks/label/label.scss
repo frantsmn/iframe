@@ -1,0 +1,23 @@
+.label {
+  color: var(--grey-text);
+  font-size: var(--fs-sm);
+  white-space: nowrap;
+
+  span {
+    margin-right: 3px;
+  }
+
+  &--wrap {
+    display: flex;
+    flex-direction: column;
+
+    // & > .select--borderless {
+    //   margin-left: -3px;
+    //   padding-left: 0;
+    // }
+
+    & > *:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}

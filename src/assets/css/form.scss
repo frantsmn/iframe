@@ -1,0 +1,164 @@
+//
+// form
+.form {
+	border: solid 1px var(--grey-light);
+
+	&__header {
+		padding: 20px 20px 0;
+	}
+
+	&__title {
+		margin: 0;
+		padding: 0;
+		font-weight: bold;
+	}
+
+	&__body {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 10px;
+	}
+
+	&__row {
+		display: flex;
+		flex-basis: 100%;
+		flex-wrap: wrap;
+	}
+
+	&__desc {
+		display: flex;
+		align-self: flex-end;
+		flex-flow: column;
+		// padding-top: 35px;
+		flex-basis: 30%;
+		flex-grow: 1;
+		justify-content: center;
+
+		// height: 60px;
+		box-sizing: content-box;
+		padding: 0 0 10px 10px;
+		& > p {
+			margin: 0;
+		}
+	}
+
+	&__input {
+		position: relative;
+		display: flex;
+		flex-basis: 30%;
+		flex-direction: column;
+		flex-grow: 1;
+		padding: 10px 10px;
+		color: var(--grey-text);
+		font-size: var(--fs-normal);
+
+		@media screen and (max-width: 650px) {
+			flex-basis: 100%;
+		}
+
+		&--no-wrap {
+			@media screen and (max-width: 650px) {
+				flex-basis: 30%;
+			}
+		}
+
+		> .custom-select {
+			margin-top: 7px;
+		}
+
+		.input {
+			height: 40px;
+			margin-top: 7px;
+			padding-left: 9px;
+			color: var(--dark-text);
+			border: 1px var(--grey-light) solid;
+			border-radius: 3px;
+
+			&[type="number"]::-webkit-inner-spin-button,
+			&[type="number"]::-webkit-outer-spin-button {
+				height: 40px;
+			}
+		}
+	}
+
+	&__footer {
+		display: flex;
+		align-items: center;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		padding: 20px;
+		background: var(--grey-lighter);
+	}
+
+	&__submit {
+		margin-right: 20px;
+
+		justify-self: flex-end;
+	}
+
+	&__footer-details {
+		align-self: flex-start;
+	}
+
+	&__footer-detail {
+		margin-right: 10px;
+	}
+
+	.footer-sum {
+		&__line {
+			display: flex;
+			justify-content: space-between;
+			margin: 0;
+			color: rgba(0, 0, 0, 0.6);
+			font-size: 12.5px;
+			font-weight: 500;
+			span:first-child {
+				font-weight: normal;
+			}
+
+			span:not(:last-child) {
+				margin-right: 10px;
+			}
+		}
+
+		&__total {
+			margin-top: 6px;
+			padding-top: 2px;
+			color: rgba(0, 0, 0, 0.9);
+			border-top: solid 1px #ccc;
+			font-size: 17.5px;
+			font-weight: 500;
+			span:first-child {
+				font-weight: normal;
+			}
+		}
+	}
+
+	&__input-swing-controls {
+		position: absolute;
+		bottom: 9px;
+		right: 11px;
+		display: flex;
+		height: 40px;
+	}
+
+
+	&__input-button {
+		border: none;
+		border-left: 1px var(--grey-light) solid;
+		display: block;
+		width: 38px;
+		height: 38px;
+		background: white;
+		cursor: pointer;
+		font-size: 18px;
+	}
+
+	&__input-button:hover{
+		background: #f3f3f3;
+	}
+
+	&__input-button:disabled{
+		pointer-events: none;
+	}
+}

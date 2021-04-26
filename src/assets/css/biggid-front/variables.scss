@@ -1,0 +1,96 @@
+:root {
+  //
+  //
+  // Main colors
+  --purple: #4e35a4;
+  --purple-light: #cac2e4;
+
+  --gold: #ffbc26;
+  --green: #84b914;
+  --red: #ef5038;
+  --orange: #ef7b3e;
+  --blue: #536c9e;
+  --blue-dark: #153a83;
+
+  --grey-lighter: #f2f2f2;
+  --grey-light: #dedede;
+  --grey: #c8c8c8;
+
+  //
+  //
+  // Gradients
+  --purple-gradient: linear-gradient(90deg, #48368d 0, #351949 100%);
+
+  //
+  //
+  // Shadows
+  --shadow-grey-0: 0 0 0 rgba(0, 0, 0, 0.3);
+  --shadow-grey-10: 0 0 10px rgba(0, 0, 0, 0.3);
+
+  //
+  //
+  // Text colors
+  --purple-dark-text: #422c75;
+  --dark-text: #343434;
+  --grey-text: #757575;
+
+  //
+  //
+  // Font sizes
+  --fs-xs: 0.75rem; //12px
+  --fs-sm: 0.82rem; //13.12px
+  --fs-normal: 0.89rem; //14.24px
+  --fs-initial: 1rem; //16px
+
+  --fs-h3: 1.17rem; //18.72px
+  --fs-h2: 1.5rem; //24px
+  --fs-h1: 2rem; //32px
+
+  //
+  //
+  // Dynamic sizes
+
+  // Aside height -> Sticky behaviour for .aside
+  --aside-height: 0;
+  
+  --header-height: 0;
+
+  //
+  //
+  // Static sizes
+
+  //Max content width
+  --max-content-width: 2048px; //4k max
+
+  // Gap for anchors
+  --anchor-gap: 85px;
+  @media screen and (max-width: 649px) {
+    --anchor-gap: 65px;
+  }
+
+  //
+  //
+  // Indents
+  --main-indent: 30px;
+  --negative-main-indent: -30px;
+
+  // @media screen and (max-width: 899px) {
+  //   --main-indent: 20px;
+  //   --negative-main-indent: -20px;
+  // }
+
+  @media screen and (max-width: 649px) {
+    --main-indent: 20px;
+    --negative-main-indent: -20px;
+  }
+
+  @media screen and (max-width: 399px) {
+    --main-indent: 15px;
+    --negative-main-indent: -15px;
+  }
+
+  @media screen and (max-width: 319px) {
+    --main-indent: 5px;
+    --negative-main-indent: -5px;
+  }
+}

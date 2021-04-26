@@ -1,0 +1,52 @@
+.radio-input {
+	position: relative;
+
+	display: inline-flex;
+	align-items: center;
+	flex-flow: row nowrap;
+
+	height: 40px;
+
+	cursor: pointer;
+	transition: border 0.2s ease;
+
+	border: solid 1px var(--grey-light);
+	border-radius: 3px;
+
+	&.active {
+		border: solid 1px var(--purple-light);
+	}
+
+	&--custom-value input[type="number"] {
+		&::-webkit-inner-spin-button,
+		&::-webkit-outer-spin-button {
+			height: 40px;
+		}
+	}
+
+	input[type="number"] {
+		display: block;
+		flex-grow: 1;
+
+		width: 65px;
+		height: 100%;
+		margin-right: 10px;
+
+		text-align: center;
+
+		border: none;
+		border-right: 1px solid var(--grey-light);
+		border-left: 1px solid var(--grey-light);
+	}
+
+	input[type="radio"] {
+		width: 22px;
+		height: 22px;
+		margin: 0 10px;
+		cursor: pointer;
+	}
+
+	span {
+		margin-right: 10px;
+	}
+}

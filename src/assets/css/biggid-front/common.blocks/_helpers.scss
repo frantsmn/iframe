@@ -1,0 +1,89 @@
+.d-none {
+  display: none !important;
+}
+
+.d-none-to-900 {
+  @include for("900") {
+    display: none !important;
+  }
+}
+
+.d-none-from-900 {
+  @include for("900<") {
+    display: none !important;
+  }
+}
+
+.x-nm {
+  margin-left: calc(0px - var(--main-indent));
+  margin-right: calc(0px - var(--main-indent));
+}
+
+.y-nm {
+  margin-top: calc(0px - var(--main-indent));
+  margin-bottom: calc(0px - var(--main-indent));
+}
+
+.x-m {
+  margin-left: var(--main-indent);
+  margin-right: var(--main-indent);
+}
+
+.y-m {
+  margin-top: var(--main-indent);
+  margin-bottom: var(--main-indent);
+}
+
+.xy-nm {
+  margin: calc(0px - var(--main-indent));
+}
+
+.xy-m {
+  margin: var(--main-indent);
+}
+
+.t-m {
+  margin-top: var(--main-indent);
+}
+
+.r-m {
+  margin-right: var(--main-indent);
+}
+
+.b-m {
+  margin-bottom: var(--main-indent);
+}
+
+.b-nm {
+  margin-bottom: var(--negative-main-indent);
+}
+
+.l-m {
+  margin-left: var(--main-indent);
+}
+
+@for $i from 0 to 4 {
+  .b-m#{$i} {
+    margin-bottom: calc(var(--main-indent) * #{$i});
+  }
+}
+
+@for $i from 0 to 4 {
+  .t-m#{$i} {
+    margin-top: calc(var(--main-indent) * #{$i});
+  }
+}
+
+@for $i from 0 to 4 {
+  .y-m#{$i} {
+    margin-top: calc(var(--main-indent) * #{$i});
+    margin-bottom: calc(var(--main-indent) * #{$i});
+  }
+}
+
+@for $i from 0 to 4 {
+  .x-m#{$i} {
+    margin-left: calc(var(--main-indent) * #{$i});
+    margin-right: calc(var(--main-indent) * #{$i});
+  }
+}

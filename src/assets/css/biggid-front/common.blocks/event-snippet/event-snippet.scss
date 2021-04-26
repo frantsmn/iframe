@@ -1,0 +1,64 @@
+.event-snippet {
+	position: relative;
+	font-size: var(--fs-normal);
+
+	&:not(:last-child) {
+		margin-bottom: 10px;
+	}
+
+	&__label {
+		display: flex;
+		border-radius: 3px;
+	}
+
+	&__radio {
+		position: absolute;
+		pointer-events: none;
+		opacity: 0;
+	}
+
+	&__time {
+		position: relative;
+		padding: 5px 10px;
+		border: 1px solid rgba(68, 111, 195, 0.3);
+		border-radius: 3px 0 0 3px;
+		background: #f5f6fa;
+		white-space: nowrap;
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+	}
+
+	&__radio:checked ~ &__time {
+		color: #fff;
+		border: 1px solid var(--gold);
+		background: var(--gold);
+	}
+
+	&__price {
+		padding: 5px 10px;
+		border: 1px solid rgba(68, 111, 195, 0.3);
+		border-radius: 0 3px 3px 0;
+		border-left: none;
+		flex-grow: 1;
+		white-space: wrap;
+		cursor: pointer;
+
+		span:not(:last-child)::after {
+			content: "; ";
+			display: inline;
+		}
+	}
+
+	&__radio:checked ~ &__price {
+		border: 1px solid var(--gold);
+		border-left: none;
+	}
+
+	&__radio:disabled ~ &__time,
+	&__radio:disabled ~ &__price {
+		opacity: 0.5;
+		pointer-events: none;
+		cursor: default;
+	}
+}

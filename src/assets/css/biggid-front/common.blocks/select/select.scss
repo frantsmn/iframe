@@ -1,0 +1,25 @@
+.select {
+  height: 35px;
+  color: var(--dark-text);
+  border: 1px var(--grey-light) solid;
+  border-radius: 3px;
+  background: #fff;
+
+  &--small {
+    height: 30px;
+    font-size: var(--fs-sm);
+  }
+
+  &--big {
+    height: 40px;
+  }
+
+  &--borderless {
+    border: none;
+  }
+
+  option:before {
+    display: inline;
+    content: url("https://picsum.photos/20/20?random=4");
+  }
+}

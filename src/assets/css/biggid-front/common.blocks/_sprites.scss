@@ -1,0 +1,61 @@
+//
+//
+// ../img/common.blocks/stack/sprite.svg
+//
+//
+
+//.header
+// $search_icon: url('../img/common.blocks/stack/sprite.svg#header--search-icon');
+$title_gradient: url("../img/common.blocks/stack/sprite.svg#header--title-gradient");
+$bonus_icon: url("../img/common.blocks/stack/sprite.svg#header--bonus-icon");
+$profile_icon: url("../img/common.blocks/stack/sprite.svg#header--profile-icon");
+$menu_icon: url("../img/common.blocks/stack/sprite.svg#header--menu-icon");
+$cart_icon: url("../img/common.blocks/stack/sprite.svg#header--cart-icon");
+$share_icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 12 12'%3E%3Ccircle cx='2.3' cy='6' r='2.3' fill='%234E35A4'/%3E%3Ccircle cx='9.8' cy='2.3' r='2.3' fill='%234E35A4'/%3E%3Ccircle cx='9.8' cy='9.8' r='2.3' fill='%234E35A4'/%3E%3Crect width='10' height='2' x='10.7' y='2.5' fill='%234E35A4' rx='1' transform='rotate(150 10.7 2.5)'/%3E%3Crect width='10' height='2' fill='%234E35A4' rx='1' transform='scale(-1 1) rotate(-30 12.4 24.6)'/%3E%3C/svg%3E");
+
+
+//
+//
+// DATA:IMAGE/SVG
+//
+//
+
+
+//.catalog-view-switcher
+$grid-switcher-list-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 14 14'%3E%3Cpath fill='%234E35A4' d='M0 0h14v2H0zm0 6h14v2H0zm0 6h14v2H0z'/%3E%3C/svg%3E");
+$grid-switcher-grid-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 14 14' id='_catalog.blocks--catalog-view-switcher--grid'%3E%3Cpath fill='%234E35A4' d='M12 0h2v2h-2zm0 6h2v2h-2zm0 6h2v2h-2zM6 0h2v2H6zm0 6h2v2H6zm0 6h2v2H6zM0 0h2v2H0zm0 6h2v2H0zm0 6h2v2H0z'/%3E%3C/svg%3E");
+
+//.swiper, .header, .button
+$left_arrow: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none'%3E%3Cpath fill='%234E35A4' d='M5 .3C5.6 0 6.3 0 6.8.3c.4.5.4 1.2 0 1.7l-3 3H11a1 1 0 1 1 0 2H3.7l3 3c.4.5.4 1.2 0 1.7-.5.4-1.2.4-1.6 0L.4 6.9a1.2 1.2 0 0 1-.3-.4 1.2 1.2 0 0 1 .3-1.4L5.1.3z'/%3E%3C/svg%3E");
+
+$gift_icon: url("data:image/svg+xml,%3Csvg width='51' height='52' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M49.8 4.6h-7.7a5 5 0 00-.7-3.7c-.5-.6-1.2-1-2-.9-3.6.5-7 2.2-9.8 4.6h-8a18.8 18.8 0 00-10-4.6c-.8 0-1.5.3-2 .9a5 5 0 00-.7 3.7H1.2C.5 4.6 0 5.2 0 5.8v9.3c0 .6.5 1.1 1.2 1.1h1.1v33.6c0 .7.5 1.2 1.2 1.2h44c.7 0 1.2-.5 1.2-1.2V16.2h1.1c.7 0 1.2-.5 1.2-1.1V5.8c0-.6-.5-1.2-1.2-1.2zm-22 4.7a2.3 2.3 0 11-4.6 0 2.3 2.3 0 014.6 0zM21 13.6l1.6-.7 1.3.7-.4 1-1.4 4-.1-.4c-.2-.6-.9-1-1.5-.8l-1.1.4 1.6-4.2zm2.2 8.6l2.3-6 2.3 6v26.5h-4.6V22.2zm5.8-4v.3l-1.6-3.8-.3-1 1.4-1 1.6.8.7 1.9v.2l.8 2.3-1.2-.4c-.5-.1-1.1.2-1.4.7zM39.7 2.3c.4.5 0 2.6 0 3.7l-.2 2v.8c0 1.3 0 4-.8 4.9-.7.8-4.2-.7-7.2-2.1l-1.6-.8c.4-1 .4-2.2 0-3.3 3-2.9 7.2-5.2 9.5-5.2h.3zm-28.4 0h.3c3.7.7 7 2.4 9.7 5a4.6 4.6 0 000 3.7c-3.4 1.5-8.3 3.4-9 2.7-.7-.6-.7-3.5-.7-4.8V8l-.2-2c-.2-1.1-.5-3.2 0-3.8zM2.3 7h6.9v1.8c0 1.7.1 3.5.6 5.1H2.3V7zm2.3 9.2h12.9l-1.3 3a1.2 1.2 0 001.5 1.6L20 20l.7 2.2v26.5h-16V16.2zm41.8 32.5H30V22.2l1-2.2 2.3.8a1.2 1.2 0 001.6-1.5l-1.2-3h12.8v32.4zm2.3-34.8h-7.5c.5-1.6.7-3.4.5-5V8l.1-1.1h6.9v7z' fill='%234E35A4'/%3E%3C/svg%3E");
+
+//.search
+$pointer_icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 12 16'%3E%3Cpath fill='%23343434' fill-rule='evenodd' d='M6 16s6-6.7 6-10A6 6 0 100 6c0 3.3 6 10 6 10zm0-7a3 3 0 100-6 3 3 0 000 6z' clip-rule='evenodd'/%3E%3C/svg%3E");
+$lens_icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 21 21'%3E%3Ccircle cx='11.5' cy='8.5' r='7.5' stroke='%23343434' stroke-width='2'/%3E%3Cpath stroke='%23343434' stroke-width='2' d='M6.4 13.7L.7 19.4'/%3E%3C/svg%3E");
+
+//.rating
+$rating_sprite: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='23' fill='none'%3E%3Cpath fill='%23DADADA' d='M5.4.4c.2-.5 1-.5 1.2 0l1 2.9c0 .3.3.4.6.4h3.2c.6 0 .8.8.3 1.1L9.2 6.6c-.2.2-.3.5-.3.7l1 2.9c.2.6-.5 1-1 .7L6.4 9a.7.7 0 0 0-.8 0l-2.5 1.8c-.5.3-1.2-.1-1-.7l1-2.9c0-.2 0-.5-.3-.7L.3 4.8c-.5-.3-.3-1 .3-1h3.2c.3 0 .5-.2.6-.5l1-2.9z'/%3E%3Cpath fill='%23F2B836' d='M5.4 12.4c.2-.5 1-.5 1.2 0l1 2.9c0 .3.3.4.6.4h3.2c.6 0 .8.8.3 1.1l-2.5 1.8c-.2.2-.3.5-.3.7l1 2.9c.2.6-.5 1-1 .7L6.4 21a.7.7 0 0 0-.8 0l-2.5 1.8c-.5.3-1.2-.1-1-.7l1-2.9c0-.2 0-.5-.3-.7L.3 16.8c-.5-.3-.3-1 .3-1h3.2c.3 0 .5-.2.6-.5l1-2.9z'/%3E%3C/svg%3E");
+
+//.tags-panel
+$white_cross: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 10 10'%3E%3Cpath fill='%23fff' d='M10 1L9 0 5 4 1 0 0 1l4 4-4 4 1 1 4-4 4 4 1-1-4-4 4-4z'/%3E%3C/svg%3E");
+
+//.mosaic-gallery
+$camera_icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 25 23'%3E%3Cpath stroke='%23fff' stroke-width='2' d='M21 5H4a3 3 0 00-3 3v11a3 3 0 003 3h17a3 3 0 003-3V8a3 3 0 00-3-3z'/%3E%3Cpath stroke='%23fff' stroke-width='2' d='M16 13.5a3.5 3.5 0 10-7 0 3.5 3.5 0 007 0z'/%3E%3Cpath fill='%23fff' fill-rule='evenodd' d='M9 2h7a2 2 0 012 2v1h2V4a4 4 0 00-4-4H9a4 4 0 00-4 4v1h2V4c0-1.1.9-2 2-2z' clip-rule='evenodd'/%3E%3C/svg%3E");
+
+
+//actions-panel__button--show-map
+$pointer_icon_purple: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6 16C6 16 12 9.31371 12 6C12 2.68629 9.31372 0 6 0C2.68628 0 0 2.68629 0 6C0 9.31371 6 16 6 16ZM6 9C7.65686 9 9 7.65685 9 6C9 4.34315 7.65686 3 6 3C4.34314 3 3 4.34315 3 6C3 7.65685 4.34314 9 6 9Z' fill='%234e35a4'/%3E%3C/svg%3E");
+
+//
+//
+// DATA:IMAGE/PNG
+//
+//
+
+
+//.list
+// Firefox не поддерживает svg в маркерах списка // $bullet_point_purple: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 7 7'%3E%3Ccircle cx='2.5' cy='2.5' r='2.5' fill='%234E35A4'/%3E%3C/svg%3E");
+$bullet_point_purple: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAICAMAAADtGH4KAAAAIVBMVEUAAABONqVONKNONqNONaRMNaVOM6NONKNONaNONaRONaTf4rNmAAAACnRSTlMAf4CAj5CQ7+/vT9qcqgAAACdJREFUCNdjYGBkZ2dhYGDhAgJmBg4QxQmjmEAUKwMDGwcHEwMqAAAiKQD8LSWFJgAAAABJRU5ErkJggg==");
+// Firefox не поддерживает svg в маркерах списка // $bullet_point_gold: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 7 7'%3E%3Ccircle cx='2.5' cy='2.5' r='2.5' fill='%23F2B836'/%3E%3C/svg%3E");
+$bullet_point_gold: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAICAMAAADtGH4KAAAAHlBMVEUAAADzuTbxtzbzuTXxtjXxuDXxuTXyuTXyuTbyuDY1iKZJAAAACXRSTlMAf4CPkJDv7+9GTxWBAAAAJ0lEQVQI12NgYGRnZ2ZgYOYEAiYGdhDFAaOYQBQLAwMrGxsTAyoAAB5wAN/jtTCoAAAAAElFTkSuQmCC");

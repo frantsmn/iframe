@@ -1,0 +1,512 @@
+[
+	{
+		"date": "04.03.2021",
+		"events": [
+			{
+				"id": "900",
+				"reserved": false,
+				"time": {
+					"timestamp_start": 1617436800000,
+					"timestamp_end": 1617444000000,
+					"start": "11:00",
+					"end": "13:00"
+				},
+				"price": {
+					"currency": "RUB",
+					"adult": 220,
+					"adult_note": "220 руб. для взрослого (18+)"
+				}
+			},
+			{
+				"id": "901",
+				"reserved": true,
+				"time": {
+					"timestamp_start": 1617447600000,
+					"timestamp_end": 1617454800000,
+					"start": "14:00",
+					"end": "16:00"
+				},
+				"price": {
+					"currency": "RUB",
+					"adult": 220,
+					"adult_note": "220 руб. для взрослого (18+)"
+				}
+			},
+			{
+				"id": "902",
+				"reserved": true,
+				"timestamp_start": 1617462000000,
+				"timestamp_end": 1617469200000,
+				"time": {
+					"start": "18:00",
+					"end": "20:00"
+				},
+				"price": {
+					"currency": "RUB",
+					"adult": 240,
+					"adult_note": "240 руб. для взрослого (18+)",
+					"child": 220,
+					"child_note": "220 руб. для ребенка (4+)"
+				}
+			},
+			{
+				"id": "903",
+				"reserved": true,
+				"time": {
+					"timestamp_start": 1617472800000,
+					"timestamp_end": 1617480000000,
+					"start": "21:00",
+					"end": "23:00"
+				},
+				"price": {
+					"currency": "RUB",
+					"adult": 240,
+					"adult_note": "240 руб. для взрослого (18+)",
+					"child": 220,
+					"child_note": "220 руб. для ребенка (4+)"
+				}
+			}
+		]
+	},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	{
+		"date": "04.04.2021",
+		"events": [
+			{
+				"id": "1000",
+				"reserved": true,
+				"time": {
+					"timestamp_start": 1617523200000,
+					"timestamp_end": 1617530400000,
+					"start": "11:00",
+					"end": "13:00"
+				},
+				"price": {
+					"currency": "RUB",
+					"adult": 220,
+					"adult_note": "220 руб. для взрослого (18+)",
+					"child": 200,
+					"child_note": "200 руб. для ребенка (4+)"
+				}
+			},
+			{
+				"id": "1001",
+				"reserved": true,
+				"time": {
+					"timestamp_start": 1617534000000,
+					"timestamp_end": 1617541200000,
+					"start": "14:00",
+					"end": "16:00"
+				},
+				"price": {
+					"currency": "RUB",
+					"adult": 220,
+					"adult_note": "220 руб. для взрослого (18+)",
+					"child": 200,
+					"child_note": "200 руб. для ребенка (4+)"
+				}
+			},
+			{
+				"id": "1002",
+				"reserved": true,
+				"time": {
+					"timestamp_start": 1617548400000,
+					"timestamp_end": 1617555600000,
+					"start": "18:00",
+					"end": "20:00"
+				},
+				"price": {
+					"currency": "RUB",
+					"adult": 240,
+					"adult_note": "240 руб. для взрослого (18+)"
+				}
+			},
+			{
+				"id": "1003",
+				"reserved": true,
+				"time": {
+					"timestamp_start": 1617559200000,
+					"timestamp_end": 1617566400000,
+					"start": "21:00",
+					"end": "23:00"
+				},
+				"price": {
+					"currency": "RUB",
+					"adult": 240,
+					"adult_note": "240 руб. для взрослого (18+)"
+				}
+			}
+		]
+	},
+	{
+		"date": "04.05.2021",
+		"events": [
+			{
+				"id": "2000",
+				"reserved": false,
+				"time": {
+					"timestamp_start": 1617609600000,
+					"timestamp_end": 1617616800000,
+					"start": "11:00",
+					"end": "13:00"
+				},
+				"price": {
+					"currency": "RUB",
+					"adult": 220,
+					"adult_note": "220 руб. для взрослого (18+)",
+					"child": 200,
+					"child_note": "200 руб. для ребенка (4+)"
+				}
+			},
+			{
+				"id": "2001",
+				"reserved": false,
+				"time": {
+					"timestamp_start": 1617620400000,
+					"timestamp_end": 1617627600000,
+					"start": "14:00",
+					"end": "16:00"
+				},
+				"price": {
+					"currency": "RUB",
+					"adult": 220,
+					"adult_note": "220 руб. для взрослого (18+)",
+					"child": 200,
+					"child_note": "200 руб. для ребенка (4+)"
+				}
+			},
+			{
+				"id": "2002",
+				"reserved": true,
+				"time": {
+					"timestamp_start": 1617634800000,
+					"timestamp_end": 1617642000000,
+					"start": "18:00",
+					"end": "20:00"
+				},
+				"price": {
+					"currency": "RUB",
+					"adult": 240,
+					"adult_note": "240 руб. для взрослого (18+)",
+					"child": 220,
+					"child_note": "220 руб. для ребенка (4+)"
+				}
+			},
+			{
+				"id": "2003",
+				"reserved": false,
+				"time": {
+					"timestamp_start": 1617645600000,
+					"timestamp_end": 1617652800000,
+					"start": "21:00",
+					"end": "23:00"
+				},
+				"price": {
+					"currency": "RUB",
+					"adult": 240,
+					"adult_note": "240 руб. для взрослого (18+)",
+					"child": 220,
+					"child_note": "220 руб. для ребенка (4+)"
+				}
+			}
+		]
+	},
+	{
+		"date": "04.06.2021",
+		"events": [
+			{
+				"id": "3000",
+				"reserved": true,
+				"time": {
+					"timestamp_start": 1617696000000,
+					"timestamp_end": 1617703200000,
+					"start": "11:00",
+					"end": "13:00"
+				},
+				"price": {
+					"currency": "RUB",
+					"adult": 220,
+					"adult_note": "220 руб. для взрослого (18+)",
+					"child": 200,
+					"child_note": "200 руб. для ребенка (4+)"
+				}
+			},
+			{
+				"id": "3001",
+				"reserved": true,
+				"time": {
+					"timestamp_start": 1617706800000,
+					"timestamp_end": 1617714000000,
+					"start": "14:00",
+					"end": "16:00"
+				},
+				"price": {
+					"currency": "RUB",
+					"adult": 220,
+					"adult_note": "220 руб. для взрослого (18+)",
+					"child": 200,
+					"child_note": "200 руб. для ребенка (4+)"
+				}
+			},
+			{
+				"id": "3002",
+				"reserved": false,
+				"time": {
+					"timestamp_start": 1617721200000,
+					"timestamp_end": 1617728400000,
+					"start": "18:00",
+					"end": "20:00"
+				},
+				"price": {
+					"currency": "RUB",
+					"adult": 240,
+					"adult_note": "240 руб. для взрослого (18+)"
+				}
+			},
+			{
+				"id": "3003",
+				"reserved": true,
+				"time": {
+					"timestamp_start": 1617732000000,
+					"timestamp_end": 1617739200000,
+					"start": "21:00",
+					"end": "23:00"
+				},
+				"price": {
+					"currency": "RUB",
+					"adult": 240,
+					"adult_note": "240 руб. для взрослого (18+)"
+				}
+			}
+		]
+	},
+	{
+		"date": "04.07.2021",
+		"events": [
+			{
+				"id": "4000",
+				"reserved": true,
+				"time": {
+					"timestamp_start": 1617782400000,
+					"timestamp_end": 1617789600000,
+					"start": "11:00",
+					"end": "13:00"
+				},
+				"price": {
+					"currency": "RUB",
+					"adult": 220,
+					"adult_note": "220 руб. для взрослого (18+)",
+					"child": 200,
+					"child_note": "200 руб. для ребенка (4+)"
+				}
+			},
+			{
+				"id": "4001",
+				"reserved": false,
+				"time": {
+					"timestamp_start": 1617793200000,
+					"timestamp_end": 1617800400000,
+					"start": "14:00",
+					"end": "16:00"
+				},
+				"price": {
+					"currency": "RUB",
+					"adult": 220,
+					"adult_note": "220 руб. для взрослого (18+)",
+					"child": 200,
+					"child_note": "200 руб. для ребенка (4+)"
+				}
+			},
+			{
+				"id": "4002",
+				"reserved": false,
+				"time": {
+					"timestamp_start": 1617807600000,
+					"timestamp_end": 1617814800000,
+					"start": "18:00",
+					"end": "20:00"
+				},
+				"price": {
+					"currency": "RUB",
+					"adult": 240,
+					"adult_note": "240 руб. для взрослого (18+)",
+					"child": 220,
+					"child_note": "220 руб. для ребенка (4+)"
+				}
+			},
+			{
+				"id": "4003",
+				"reserved": false,
+				"time": {
+					"timestamp_start": 1617818400000,
+					"timestamp_end": 1617825600000,
+					"start": "21:00",
+					"end": "23:00"
+				},
+				"price": {
+					"currency": "RUB",
+					"adult": 240,
+					"adult_note": "240 руб. для взрослого (18+)",
+					"child": 220,
+					"child_note": "220 руб. для ребенка (4+)"
+				}
+			}
+		]
+	},
+	{
+		"date": "04.08.2021",
+		"events": [
+			{
+				"id": "5000",
+				"reserved": false,
+				"time": {
+					"timestamp_start": 1617868800000,
+					"timestamp_end": 1617876000000,
+					"start": "11:00",
+					"end": "13:00"
+				},
+				"price": {
+					"currency": "RUB",
+					"adult": 220,
+					"adult_note": "220 руб. для взрослого (18+)",
+					"child": 200,
+					"child_note": "200 руб. для ребенка (4+)"
+				}
+			},
+			{
+				"id": "5001",
+				"reserved": false,
+				"time": {
+					"timestamp_start": 1617879600000,
+					"timestamp_end": 1617886800000,
+					"start": "14:00",
+					"end": "16:00"
+				},
+				"price": {
+					"currency": "RUB",
+					"adult": 220,
+					"adult_note": "220 руб. для взрослого (18+)",
+					"child": 200,
+					"child_note": "200 руб. для ребенка (4+)"
+				}
+			},
+			{
+				"id": "5002",
+				"reserved": false,
+				"time": {
+					"timestamp_start": 1617894000000,
+					"timestamp_end": 1617901200000,
+					"start": "18:00",
+					"end": "20:00"
+				},
+				"price": {
+					"currency": "RUB",
+					"adult": 240,
+					"adult_note": "240 руб. для взрослого (18+)"
+				}
+			},
+			{
+				"id": "5003",
+				"reserved": false,
+				"time": {
+					"timestamp_start": 1617904800000,
+					"timestamp_end": 1617912000000,
+					"start": "21:00",
+					"end": "23:00"
+				},
+				"price": {
+					"currency": "RUB",
+					"adult": 240,
+					"adult_note": "240 руб. для взрослого (18+)"
+				}
+			}
+		]
+	},
+	{
+		"date": "04.09.2021",
+		"events": [
+			{
+				"id": "6000",
+				"reserved": false,
+				"time": {
+					"timestamp_start": 1617955200000,
+					"timestamp_end": 1617962400000,
+					"start": "11:00",
+					"end": "13:00"
+				},
+				"price": {
+					"currency": "RUB",
+					"adult": 220,
+					"adult_note": "220 руб. для взрослого (18+)",
+					"child": 200,
+					"child_note": "200 руб. для ребенка (4+)"
+				}
+			},
+			{
+				"id": "6001",
+				"reserved": false,
+				"time": {
+					"timestamp_start": 1617966000000,
+					"timestamp_end": 1617973200000,
+					"start": "14:00",
+					"end": "16:00"
+				},
+				"price": {
+					"currency": "RUB",
+					"adult": 220,
+					"adult_note": "220 руб. для взрослого (18+)",
+					"child": 200,
+					"child_note": "200 руб. для ребенка (4+)"
+				}
+			},
+			{
+				"id": "6002",
+				"reserved": true,
+				"time": {
+					"timestamp_start": 1617980400000,
+					"timestamp_end": 1617987600000,
+					"start": "18:00",
+					"end": "20:00"
+				},
+				"price": {
+					"currency": "RUB",
+					"adult": 240,
+					"adult_note": "240 руб. для взрослого (18+)",
+					"child": 220,
+					"child_note": "220 руб. для ребенка (4+)"
+				}
+			},
+			{
+				"id": "6003",
+				"reserved": true,
+				"time": {
+					"timestamp_start": 1617991200000,
+					"timestamp_end": 1617998400000,
+					"start": "21:00",
+					"end": "23:00"
+				},
+				"price": {
+					"currency": "RUB",
+					"adult": 240,
+					"adult_note": "240 руб. для взрослого (18+)",
+					"child": 220,
+					"child_note": "220 руб. для ребенка (4+)"
+				}
+			}
+		]
+	}
+]

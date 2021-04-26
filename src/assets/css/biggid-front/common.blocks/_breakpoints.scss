@@ -1,0 +1,43 @@
+@mixin for($size) {
+  @if $size == "400" {
+    @media screen and (max-width: 399px) {
+      @content;
+    }
+  } @else if $size == "400<" {
+    @media screen and (min-width: 400px) {
+      @content;
+    }
+  } @else if $size == "650" {
+    @media screen and (max-width: 649px) {
+      @content;
+    }
+  } @else if $size == "650<" {
+    @media screen and (min-width: 650px) {
+      @content;
+    }
+  } @else if $size == "900" {
+    @media screen and (max-width: 899px) {
+      @content;
+    }
+  } @else if $size == "900<" {
+    @media screen and (min-width: 900px) {
+      @content;
+    }
+  } @else if $size == "1200" {
+    @media screen and (max-width: 1199px) {
+      @content;
+    }
+  } @else if $size == "1200<" {
+    @media screen and (min-width: 1200px) {
+      @content;
+    }
+  } @else if $size == "1300" {
+    @media screen and (max-width: 1299px) {
+      @content;
+    }
+  } @else if $size == "1300<" {
+    @media screen and (min-width: 1300px) {
+      @content;
+    }
+  }
+}
