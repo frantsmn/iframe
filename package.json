@@ -9,14 +9,14 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
-    "document-register-element": "^1.14.3",
-    "v-calendar": "^1.0.6",
-    "vue": "^2.6.11",
-    "vue-custom-element": "^3.2.14",
+    "document-register-element": "^1.14.10",
+    "v-calendar": "^1.0.8",
+    "vue": "^2.6.12",
+    "vue-custom-element": "^3.3.0",
     "vue-phone-mask-input": "^1.1.11",
-    "vue-router": "^3.1.6",
-    "vue-select": "^3.10.3",
-    "vuex": "^3.3.0",
+    "vue-router": "^3.5.1",
+    "vue-select": "^3.11.2",
+    "vuex": "^3.6.2",
     "webpack": "^4.43.0"
   },
   "devDependencies": {
@@ -24,9 +24,9 @@
     "@vue/cli-service": "^3.12.1",
     "eslint": "^4.18.2",
     "eslint-plugin-vue": "^4.3.0",
-    "node-sass": "^4.14.0",
+    "node-sass": "^4.14.1",
     "sass-loader": "^7.3.1",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.12"
   },
   "eslintConfig": {
     "root": true,
